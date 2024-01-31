@@ -2,7 +2,7 @@ const PORT = 3000; // porta em o server vai rodar
 const http = require('http'); // trás o modulo http do node
 
 function handler(req, res) { //função handler acionada toda vez que um recurso bater na porta 3000
-    res.setHeader('Acess-Control-Allow-Origin','*'); /* CORS - indica quais domínios podem acessar os recursos, 
+    res.setHeader('Access-Control-Allow-Origin','*'); /* CORS - indica quais domínios podem acessar os recursos, 
     o valor '*' indica que qualquer domínio pode acessar os recursos */ 
 
     const send =(payload ={}, statusCode = 200) => { /* payload é o objeto que será enviado como respostas,
